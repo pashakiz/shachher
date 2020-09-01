@@ -1,7 +1,7 @@
 {
-  "name": "ShachHer",
+  "name": "SnachHer",
   "version": "1.0.0",
-  "description": "http://lubus.ru/d/shachher/",
+  "description": "http://lubus.ru/d/snachher/",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pashakiz/shachher.git"
+    "url": "git+https://github.com/pashakiz/snachher.git"
   },
   "keywords": [],
   "author": "Pavel Kizernis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pashakiz/shachher/issues"
+    "url": "https://github.com/pashakiz/snachher/issues"
   },
-  "homepage": "https://github.com/pashakiz/shachher#readme",
+  "homepage": "https://github.com/pashakiz/snachher#readme",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
