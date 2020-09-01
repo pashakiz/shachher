@@ -23,14 +23,6 @@
       margin-top: 0;
     }
   }
-  @media (min-width: 1200px) {
-    a.footer__link {
-      font-size: 16px;
-    }
-    a.footer__link + a.footer__link {
-      margin-left: 50px;
-    }
-  }
 }
 
 .footer__bottom {
@@ -40,7 +32,3 @@
   }
 }
 
-.footer__row {
-  position: relative;
-  z-index: 10;
-}

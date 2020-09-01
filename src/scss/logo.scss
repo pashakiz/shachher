@@ -11,16 +11,12 @@
 }
 
 .logo_main {
-  width: 24px;
-  height: 24px;
+  width: 146px;
+  height: 38px;
   background-image: url('../img/icons/logo-white.svg');
-  margin-right: 12px;
   @media (min-width: 768px) {
-    & {
-      width: 43px;
-      height: 43px;
-      margin-right: 20px;
-      background-image: url('../img/icons/logo.svg');
-    }
+    width: 220px;
+    height: 55px;
+    background-image: url('../img/icons/logo.svg');
   }
 }
