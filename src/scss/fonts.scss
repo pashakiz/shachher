@@ -1,0 +1,32 @@
+/* font-family: "CeraPro"; */
+/* font-family: "RozhaOne"; */
+@font-face {
+    font-family: "CeraPro"; /*Light*/
+    src: url("../fonts/CeraPro/CeraPro-Light.eot");
+    src: url("../fonts/CeraPro/CeraPro-Light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CeraPro/CeraPro-Light.woff") format("woff"),
+    url("../fonts/CeraPro/CeraPro-Light.ttf") format("tuetype"),
+    url("../fonts/CeraPro/CeraPro-Light.svg#CeraPro-Light") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "CeraPro"; /*Regular*/
+    src: url("../fonts/CeraPro/CeraPro-Regular.eot");
+    src: url("../fonts/CeraPro/CeraPro-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CeraPro/CeraPro-Regular.woff") format("woff"),
+    url("../fonts/CeraPro/CeraPro-Regular.ttf") format("truetype"),
+    url("../fonts/CeraPro/CeraPro-Regular.svg#CeraPro-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "RozhaOne"; /*Regular*/
+    src: url("../fonts/RozhaOne/RozhaOne-Regular.eot");
+    src: url("../fonts/RozhaOne/RozhaOne-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RozhaOne/RozhaOne-Regular.woff") format("woff"),
+    url("../fonts/RozhaOne/RozhaOne-Regular.ttf") format("truetype"),
+    url("../fonts/RozhaOne/RozhaOne-Regular.svg#RozhaOne-Regular") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
