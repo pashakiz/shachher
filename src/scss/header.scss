@@ -1,19 +1,17 @@
 .header {
   .notice {
-    display: inline-block;
     background-color: $btn_bg_color;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 6px 10px;
+    display: inline-block;
+    border-radius: 25px;
+    color: #F1ECE9;
+    font-size: 14px;
+    font-family: $font_family2;
+    padding: 7px 12px;
     line-height: 1;
     text-align: center;
     @media (min-width: 768px) {
-      & {
-        font-size: 15px;
-        padding: 7px 10px;
-      }
+      font-size: 18px;
+      padding: 8px 16px;
     }
   }
   &.expand {
@@ -24,6 +22,11 @@
           background-color: transparent;
         }
       }
+    }
+    .header__nav-toggle {
+      width: 18px;
+      height: 17px;
+      background-image: url("../img/icons/icon-close.svg");
     }
   }
 }
@@ -40,22 +43,30 @@
     padding: 71px 0 0;
   }
   @media (min-width: 1200px) {
+    padding: 71px 70px 0;
+  }
+  @media (min-width: 1350px) {
+    padding: 71px 100px 0;
+  }
+  @media (min-width: 1400px) {
     padding: 71px 140px 0;
   }
 }
 
 .header__nav-toggle {
-  color: #fff;
-  font-size: 14px;
+  display: block;
+  width: 22px;
+  height: 15px;
+  background-image: url('../img/icons/icon-menu.svg');
+  background-repeat: no-repeat;
+  background-position: 100%;
   padding-left: 10px;
   cursor: pointer;
   &:hover {
     opacity: 0.75;
   }
   @media (min-width: 768px) {
-    & {
-      display: none;
-    }
+    display: none;
   }
 }
 .header__userinfo {
@@ -63,22 +74,18 @@
   padding-left: 30px;
   max-width: 500px;
   @media (min-width: 768px) {
-    & {
-      display: block;
-    }
+    display: block;
   }
   .notice {
-    margin-left: 22px;
+    margin-left: 14px;
     position: relative;
-    top: -1px;
+    top: -3px;
   }
   .header__userinfo-text,
   a.header__userinfo-text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
+    font-family: $font_family2;
+    font-size: 25px;
+    color: $font_color;
     text-decoration: none;
     word-break: break-all;
     &:hover {
@@ -95,28 +102,28 @@
   }
 }
 .header-menu__wrap {
-  padding-top: 30px;
+  padding-top: 36px;
+  padding-bottom: 28px;
 }
 .header-menu__item {
-  padding: 15px 15px 30px;
+  padding: 16px 0 21px;
   &:hover {
     opacity: 0.75;
     text-decoration: none;
+    .notice {
+      background-color: $btn_hover_bg_color;
+    }
   }
 }
 .header-menu__item-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
+  font-family: $font_family2;
+  font-size: 19px;
+  color: $font_color;
   text-decoration: none;
   word-break: break-all;
-  padding-right: 30px;
+  padding-right: 17px;
   @media (min-width: 768px) {
-    & {
-      font-size: 18px;
-    }
+    font-size: 25px;
   }
 }
 
