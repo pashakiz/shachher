@@ -18,7 +18,7 @@
   }
   &.expand {
     .header__row {
-      background-color: $bg_dark_1;
+      //background-color: $bg_dark_1;
       @media (min-width: 768px) {
         & {
           background-color: transparent;
@@ -28,30 +28,19 @@
   }
 }
 .header_page {
-  margin-bottom: 68px;
-  @media (min-width: 768px) {
-    & {
-      margin-bottom: 40px;
-    }
-  }
+  margin-bottom: 55px;
   @media (min-width: 992px) {
-    & {
-      margin-bottom: 90px;
-    }
+    margin-bottom: 90px;
   }
 }
 
 .header__row {
-  padding: 27px 15px 0;
-  @media (min-width: 768px) {
-    & {
-      padding: 40px 40px 0 40px;
-    }
-  }
+  padding: 24px 0 0;
   @media (min-width: 992px) {
-    & {
-      padding: 90px 90px 0 90px;
-    }
+    padding: 71px 0 0;
+  }
+  @media (min-width: 1200px) {
+    padding: 71px 140px 0;
   }
 }
 
@@ -107,7 +96,6 @@
 }
 .header-menu__wrap {
   padding-top: 30px;
-  background-color: $bg_dark_1;
 }
 .header-menu__item {
   padding: 15px 15px 30px;

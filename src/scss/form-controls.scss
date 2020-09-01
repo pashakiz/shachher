@@ -346,15 +346,18 @@ textarea.form-control {
     box-shadow: none;
   }
   @media (min-width: 768px) {
-    & {
-      width: auto;
-    }
+    width: auto;
   }
   @media (min-width: 992px) {
-    & {
-      width: auto;
-      font-size: 17px;
-      padding: 2rem 2.5rem;
+    width: auto;
+    font-size: 17px;
+    padding: 2rem 2.5rem;
+  }
+  .btn_2 {
+    background-color: $btn2_bg_color;
+    &:hover {
+      color: #fff;
+      background-color: $btn2_hover_bg_color;
     }
   }
 }
