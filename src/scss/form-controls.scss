@@ -250,7 +250,7 @@ textarea.form-control {
         left: calc(50% - 20px);
       }
       &::before {
-        top: 0;
+        top: 1px;
       }
       &::after {
         bottom: 0;
