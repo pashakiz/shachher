@@ -241,13 +241,13 @@ textarea.form-control {
       &::before, &::after {
         content: '';
         display: block;
-        width: 44px;
+        width: 46px;
         height: 10px;
         background-position: 50%;
         background-repeat: no-repeat;
         background-image: url("../img/icons/swich-sep.svg");
         position: absolute;
-        left: calc(50% - 22px);
+        left: calc(50% - 23px);
       }
       &::before {
         top: 0;
