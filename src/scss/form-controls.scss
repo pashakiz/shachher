@@ -342,11 +342,10 @@ textarea.form-control {
 .btn {
   width: 100%;
   text-transform: uppercase;
-  border-radius: 0;
-  padding: 1.25rem 1.3rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 13px;
+  border-radius: 100px;
+  padding: 1.125rem 1.3rem;
+  font-family: $font_family2;
+  font-size: 18px;
   color: #fff;
   background-color: $btn_bg_color;
   &:hover {
@@ -362,8 +361,8 @@ textarea.form-control {
   }
   @media (min-width: 992px) {
     width: auto;
-    font-size: 17px;
-    padding: 2rem 2.5rem;
+    font-size: 26px;
+    padding: 1.75rem 2.5rem;
   }
   .btn_2 {
     background-color: $btn2_bg_color;
