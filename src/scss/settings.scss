@@ -33,3 +33,11 @@
 .profile-photo__img {
   display: none;
 }
+
+.subscription {
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: 576px) {
+    max-width: 620px;
+  }
+}
