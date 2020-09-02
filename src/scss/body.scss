@@ -195,31 +195,34 @@ a {
   transition: 0.5s all;
   opacity: 1;
   visibility: visible;
-}
-.preloader .loader {
-  width: 50px;
-  height: 50px;
-  background-image: url('../img/icons/loader.svg');
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: 1s spin infinite linear;
-}
-.preloader.done {
-  opacity: 0;
-  visibility: hidden;
-}
-@keyframes spin {
-  from {
+  .loader {
     width: 50px;
     height: 50px;
+    background-image: url('../img/icons/loader.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
-  to {
-    width: 75px;
-    height: 75px;
+  &.done {
+    opacity: 0;
+    visibility: hidden;
+  }
+  @keyframes spin {
+    from {
+      width: 50px;
+      height: 50px;
+    }
+    to {
+      width: 75px;
+      height: 75px;
+    }
   }
 }
+
 .sticky-footer {
   position: relative;
   min-height: 100%;
