@@ -150,44 +150,43 @@
     +.compatibility__chart {
       margin-left: 40px;
       @media (min-width: 768px) {
-        & {
-          margin-left: 56px;
-        }
+        margin-left: 56px;
       }
     }
   }
-  .compatibility__img {
-    width: 46px;
-    height: 41px;
-    @media (min-width: 768px) {
-      & {
-        width: 59px;
-        height: 54px;
+  .compatibility__chart {
+    +.compatibility__chart {
+      margin-left: 5px;
+      @media (min-width: $user_list_item_breakpoint) {
+        margin-left: 32px;
       }
+    }
+  }
+  .compatibility__progress {
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    @media (min-width: 992px) {
+      width: 50px;
+      height: 50px;
     }
   }
   .compatibility__title {
-    font-weight: 500;
-    color: #C9C9C9;
-    margin-top: 10px;
-    @media (min-width: 768px) {
-      & {
-        margin-top: 25px;
-      }
+    font-weight: 400;
+    color: #E9DBEB;
+    margin-top: 4px;
+    font-size: 8px;
+    text-align: center;
+    @media (min-width: $user_list_item_breakpoint) {
+      margin-top: 12px;
+      font-size: 18px;
     }
   }
   &.compatibility_mb {
     margin-bottom: 66px;
   }
-  &.compatibility_list {
-    .compatibility__img {
-      width: 24px;
-      height: 18px;
-      @media (min-width: $user_list_item_breakpoint) {
-        width: 59px;
-        height: 54px;
-      }
-    }
+  &.compatibility_profile {
+    .compatibility__progress {}
     .compatibility__title {
       margin-top: 5px;
       font-size: 7px;
@@ -200,35 +199,9 @@
     }
     .compatibility__chart {
       +.compatibility__chart {
-        margin-left: 11px;
+        margin-left: 5px;
         @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 71px;
-        }
-      }
-    }
-  }
-  &.compatibility_login {
-    .compatibility__img {
-      width: 36px;
-      height: 29px;
-      @media (min-width: $user_list_item_breakpoint) {
-        width: 59px;
-        height: 54px;
-      }
-    }
-    .compatibility__title {
-      margin-top: 8px;
-      font-size: 10px;
-      @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 16px;
-        font-size: 16px;
-      }
-    }
-    .compatibility__chart {
-      +.compatibility__chart {
-        margin-left: 22px;
-        @media (min-width: $user_list_item_breakpoint) {
-          margin-left: 71px;
+          margin-left: 32px;
         }
       }
     }
