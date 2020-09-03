@@ -45,6 +45,7 @@
       min-width: 280px;
       max-height: 280px;
       border: 25px solid $body_bg_color;
+      margin: 0 0 0 -25px;
     }
     .user-list-item__img {
       width: 100%;
@@ -65,11 +66,13 @@
       position: relative;
       bottom: -78px;
       width: 87px;
+      height: 21px;
       margin: 0 auto;
       @media (min-width: $user_list_item_breakpoint) {
         width: 200px;
         bottom: -180px;
-        padding: 10px 2.5rem;
+        padding: 17px 2.5rem;
+        height: 46px;
         font-size: 18px;
       }
     }
@@ -105,7 +108,7 @@
         font-family: $font_family;
         font-weight: 400;
         font-size: 8px;
-        color: #E9DBEB;
+        color: rgba(255,255,255,0.5);
         @media (min-width: $user_list_item_breakpoint) {
           font-size: 15px;
         }
@@ -150,78 +153,90 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
   @media (min-width: 348px) {
     justify-content: space-around;
   }
   @media (min-width: 1920px) {
     justify-content: space-between;
+    width: $container-xxxl + $user_list_wider; //1374+160=1534
+    left: -80px;
   }
 }
 
 .user-list-extra-item {
   background-color: $bg_dark_1;
-  padding: 12px 17px 21px;
-  border-radius: 100px 50px 100px 100px;
-  margin-bottom: 12px;
-  @media (min-width: $user_list_item_breakpoint) {
-    padding: 28px 38px;
-    margin-bottom: 40px;
-  }
+  border-radius: 300px;
+  margin: 25px 0;
   .user-list-extra-item__pic {
-    max-width: 104px;
-    min-width: 104px;
-    max-height: 104px;
+    max-width: 117px;
+    min-width: 117px;
+    height: 117px;
+    max-height: 117px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
+    border: 10px solid $body_bg_color;
+    margin: -10px 0 0 0;
+    box-sizing: content-box;
     @media (min-width: $user_list_item_breakpoint) {
-      max-width: 237px;
-      min-width: 237px;
-      max-height: 237px;
+      max-width: 280px;
+      min-width: 280px;
+      height: 280px;
+      max-height: 280px;
+      border: 25px solid $body_bg_color;
+      margin: -25px 0 0 0;
     }
-    .user-list-extra-item__img {}
-    .user-list-extra-item__txt {
-      font-size: 7px;
-      font-weight: 500;
-      color: #fff;
-      text-transform: uppercase;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
+    .user-list-extra-item__img {
       width: 100%;
-      text-align: center;
-      margin-top: -5px;
+      height: 117px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: cover;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 15px;
-        margin-top: -11px;
+        height: 280px;
+      }
+    }
+    .user-list-extra-item__icon {
+      width: 23px;
+      height: 33px;
+      @media (min-width: $user_list_item_breakpoint) {
+        width: 56px;
+        height: 79px;
+      }
+      .icon-lock {
+        fill: $body_bg_color;
       }
     }
   }
   .user-list-extra-item__inf {
     text-align: center;
-    margin-top: 7px;
+    padding: 6px 15px 27px;
     @media (min-width: $user_list_item_breakpoint) {
-      margin-top: 19px;
+      padding: 20px 30px 64px;
     }
     .user-list-extra-item__name {
+      text-transform: uppercase;
       font-family: $font_family2;
-      font-weight: 300;
-      font-style: italic;
-      font-size: 11px;
+      font-weight: 400;
+      font-size: 12px;
+      color: #fff;
       @media (min-width: $user_list_item_breakpoint) {
-        font-size: 25px;
-        color: #fff;
+        font-size: 27px;
       }
     }
     .user-list-extra-item__loc {
-      font-weight: 500;
       font-size: 7px;
-      margin-top: 6px;
+      font-weight: 400;
+      margin-top: 4px;
+      color: rgba(255,255,255,0.5);
       @media (min-width: $user_list_item_breakpoint) {
-        margin-top: 16px;
-        font-size: 15px;
-        color: #fff;
+        margin-top: 10px;
+        font-size: 18px;
+
       }
     }
     .user-list-extra-item__br {
