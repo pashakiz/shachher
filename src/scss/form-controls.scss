@@ -275,7 +275,6 @@ textarea.form-control {
         &::before {
           background-color: $btn_hover_bg_color;
           border: 1px solid $btn_hover_bg_color !important;
-          opacity: 0.5;
         }
         &::after {
           background-color: $radio_active_bg_color;
