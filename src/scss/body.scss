@@ -140,31 +140,17 @@ a {
       line-height: 31px;
     }
   }
-  .link1__icon {
-    display: inline-block;
-    padding-left: 15px;
-    @media (min-width: 768px) {
-      & {
-        padding-left: 20px;
-      }
-    }
-  }
 }
 .link2 {
-  font-family: $link_txt_family;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 20px;
+  font-family: $font_family;
   color: $link2_color;
+  font-weight: 400;
+  font-size: 16px;
   &:hover {
     color: $link2_hover_color;
   }
   @media (min-width: 768px) {
-    & {
-      font-size: 23px;
-      line-height: 31px;
-    }
+    font-size: 20px;
   }
 }
 .link3 {

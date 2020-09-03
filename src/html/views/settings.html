@@ -4,59 +4,78 @@
         <div class="content">
             <form action="">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <h2>Settings</h2>
+                    <div class="col">
                         <div class="settings-photo">
-                            <div class="form-group form-group_40">
+                            <div class="form-group">
                                 <div class="profile-photo">
-                                    <img class="profile-photo__img img-fluid" src="img/photos/ava.jpg" alt="Profile photo">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="customFile">
+                                        <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
+                                            <span class="btn btn_4 btn_w100">Change photo</span>
+                                        </label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group form-group_30 text-center">
-                                <div class="custom-file custom-file_my">
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-area d-flex align-items-center justify-content-center" for="customFile">
-                                        <span class="link2">Change photo</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group text-center d-none d-lg-block">
-                                <a href="#" class="link1">Sign Out <span class="link1__icon icon-logout"></span></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
                         <div class="settings-form">
-                            <div class="form-group form-group_20">
-                                <input class="form-control" type="text" placeholder="Full Name">
-                            </div>
-                            <div class="form-group form-group_40">
-                                <input class="form-control" type="text" placeholder="Age">
-                            </div>
-                            <div class="form-group form-group_40">
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline1">Male</label>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_input">
+                                        <input class="form-control" type="text" placeholder="Full Name">
+                                    </div>
                                 </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_input">
+                                        <input class="form-control" type="text" placeholder="Last Name">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group form-group_40">
-                                <textarea class="form-control" placeholder="About"></textarea>
-                            </div>
-                            <div class="form-group form-group_40">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                    <label class="custom-control-label" for="customCheck8">Notify me of site updates</label>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_input">
+                                        <input class="form-control" type="text" placeholder="Age">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_check">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <button class="btn btn_w100">SAVE PREFERENCES</button>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group form-group_input">
+                                        <textarea class="form-control" placeholder="About"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group form-group_30up d-block d-lg-none">
-                                <a href="#" class="link1">Sign Out <span class="link1__icon icon-logout"></span></a>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group form-group_check">
+                                        <div class="custom-control custom-switch custom-switch_inline">
+                                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                            <label class="custom-control-label" for="customSwitch1">
+                                                <div class="custom-control-label-separator"></div>
+                                                Notify me of site updates
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-group">
+                                        <button class="btn btn_w100">SAVE PREFERENCES</button>
+                                    </div>
+                                    <div class="form-group form-group_30up text-center">
+                                        <a href="#" class="link2">Sign Out</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
