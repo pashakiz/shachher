@@ -50,11 +50,36 @@ body textarea:required:valid {
     padding: 30px 44px;
     font-size: 20px;
   }
+  &.form-control_header {
+    text-align: center;
+    @media (min-width: 768px) {
+      padding: 30px 44px;
+      font-size: 20px;
+    }
+    @media (min-width: 1200px) {
+      padding: 21px 25px;
+      font-size: 18px;
+    }
+    @media (min-width: 1500px) {
+      padding: 30px 44px;
+      font-size: 20px;
+    }
+  }
 }
 input.form-control {
   height: 62px;
   @media (min-width: 768px) {
     height: 85px;
+  }
+  @media (min-width: 1200px) {
+    &.form-control_header {
+      height: 62px;
+    }
+  }
+  @media (min-width: 1500px) {
+    &.form-control_header {
+      height: 85px;
+    }
   }
 }
 textarea.form-control {
@@ -83,6 +108,30 @@ textarea.form-control {
   margin-bottom: 1.875rem;
   @media (min-width: 768px) {
     margin-bottom: 2.5rem;
+  }
+}
+.form-group_login {
+  margin-bottom: 20px;
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1500px) {
+    margin-bottom: 32px;
+  }
+}
+.form-group_up-login {
+  margin-top: 24px;
+  @media (min-width: 768px) {
+    margin-top: 39px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 17px;
+  }
+  @media (min-width: 1500px) {
+    margin-top: 39px;
   }
 }
 .form-group_input {
@@ -552,6 +601,21 @@ textarea.form-control {
     font-size: 26px;
     padding: 1.75rem 2.5rem;
   }
+  &.btn_1 {
+    @media (min-width: 768px) {
+      width: auto;
+      font-size: 26px;
+      padding: 1.75rem 2.5rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 22px;
+      padding: 1.125rem 1.3rem;
+    }
+    @media (min-width: 1500px) {
+      font-size: 26px;
+      padding: 1.75rem 2.5rem;
+    }
+  }
   &.btn_2 {
     background-color: $btn2_bg_color;
     &:hover {
@@ -573,7 +637,8 @@ textarea.form-control {
       padding: 20px 2.5rem 19px;
     }
   }
+  &.btn_w100 {
+    width: 100%;
+  }
 }
-.btn_w100 {
-  width: 100%;
-}
+

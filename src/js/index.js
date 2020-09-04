@@ -36,31 +36,6 @@ $(function() {
             $('.profile-photo').css('background-image', 'url(' + imageUrl + ')');
         });
 
-        //slider login page
-        $('.owl-carousel.login-slider').owlCarousel({
-            loop:true,
-            autoWidth:true,
-            items: 3,
-            responsive:{
-                0:{
-                    margin:23,
-                    items:2
-                },
-                600:{
-                    margin:23,
-                    items:3
-                },
-                1400:{
-                    margin:91,
-                    items:3
-                },
-                1920:{
-                    margin:91,
-                    items:3
-                }
-            }
-        });
-
         //slider (Profile gallery) for mobile
         $('.owl-carousel.user-profile-slider').owlCarousel({
             items: 1,
