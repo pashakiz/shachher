@@ -212,6 +212,18 @@
   @media (min-width: 1920px) {
     height: 1044px;
   }
+  &.header__firstscreen_hauto {
+    height: auto;
+    @media (min-width: 1200px) {
+      padding-bottom: 60px;
+    }
+    @media (min-width: 1500px) {
+      padding-bottom: 80px;
+    }
+    @media (min-width: 1920px) {
+      padding-bottom: 100px;
+    }
+  }
 }
 
 .header__firstscreen-wrap {
@@ -227,6 +239,9 @@
     }
     &.index {
       width: 400px;
+      border-top: 1px solid $logo_main_color;
+      top: 0;
+      bottom: 0;
     }
   }
   @media (min-width: 1500px) {
@@ -244,6 +259,7 @@
     }
     &.index {
       width: 731px;
+      padding-bottom: 200px;
     }
   }
   @media (min-width: 2000px) {
@@ -259,6 +275,11 @@
 .header__firstscreen-inner {
   position: relative;
   z-index: 20;
+  @media (min-width: 1920px) {
+    &.index {
+      padding-bottom: 180px;
+    }
+  }
 }
 
 .header__firstscreen-img {
@@ -320,62 +341,21 @@
   }
 }
 
-.header__titlebox {
-  margin-bottom: 20px;
-  @media (min-width: 768px) {
-    width: 250px;
-    margin-bottom: 0;
-  }
-  @media (min-width: 992px) {
-    width: 360px;
+.indextitle {
+  font-family: $font_family2;
+  font-size: 16px;
+  color: $logo_main_color;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    margin-bottom: 24px;
   }
 }
 
-.header__title {
-  width: 210px;
-  margin: 0 auto 40px;
-  text-align: center;
-  font-family: "ActaDisplay", sans-serif;
-  font-weight: 300;
-  font-size: 34px;
-  line-height: 45px;
-  color: #fff;
-  &:before {
-    @media (min-width: 768px) {
-      & {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 1px;
-        border-top: 3px solid $logo_main_color;
-        margin-bottom: 20px;
-      }
-    }
-  }
+.header__info_pull {
+  padding: 0 18px;
   @media (min-width: 768px) {
-    & {
-      width: auto;
-      text-align: left;
-      margin: 0 0 50px;
-    }
-  }
-  @media (min-width: 992px) {
-    & {
-      font-size: 45px;
-      line-height: 60px;
-    }
-  }
-  @media (min-width: 1200px) {
-    & {
-      font-size: 67px;
-      line-height: 85px;
-      margin: 0 0 60px;
-    }
-  }
-  @media (min-width: 1440px) {
-    & {
-      font-size: 90px;
-      line-height: 120px;
-    }
+    padding: 0;
   }
 }
