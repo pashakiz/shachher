@@ -42,10 +42,33 @@ $(function() {
             dots:true
         });
 
+        //slider (Profile gallery) for desktop
+        $('.owl-carousel.user-profile-gallery').owlCarousel({
+            loop: true,
+            dots: false,
+            items: 4,
+            autoWidth: true,
+            responsive:{
+                768:{
+                    margin: 5
+                },
+                992:{
+                    margin: 5
+                },
+                1200:{
+                    margin: 10
+                },
+                1410:{
+                    margin: 11
+                }
+            }
+        });
+
         //gallery on desktop
-        $('.user-profile-gallery').on('click', '.user-profile-gallery__img', function(){
-            let url = $(this).attr('src');
-            $('.profile-photo-img').attr('src', url);
+        $('.user-profile-gallery').on('click', '.user-profile-gallery__item', function(){
+            let url = $(this).css('background-image');
+            url = url.replace('url(','').replace(')','').replace(/\"/gi, "");
+            $('.user-list-item__img').css('background-image', 'url(' + url + ')');;
         });
 
     });
